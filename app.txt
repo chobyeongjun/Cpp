@@ -5,3 +5,34 @@ git commit -m '메모' # 메모에는 내가 어떤 것들을 수정했는지 �
 git add . # 폴더 내 모든 파일을 add 하는 것임
 git status 를 하면 지금 어떤 것들이 staging 되었는지
 git log --all --oneline 하면 현재 어떤 것들을 commit 했는지
+
+merge : git merge 합병 시키고 싶은 브랜치
+git difftool : vim editor로 commit 차이점 알 수 있음
+
+git merge 는 새로운 수정이 있으면 3 way merge 되고 아무것도 수정 없으면 Fast Forward merge
+git rebase는 새로운 수정이 있어도 3 way 말고 fast forward 시키고 싶으면
+git rebase 중심 branch -> git merge 새로운 브랜치 명
+git merge --squash 새 브랜치
+
+git stash : 맘에 안드는 수정된 코드 잠시 다른 데에 보관해두기
+git stash list 
+git stash save '메모' :: 메모까지 적고 싶으면 
+git stash pop : 최신 순으로 다시 불러들임
+
+git restore 파일명 : 최신 commit 상태로 돌아감
+git restore --source 커밋 아이디 파일명
+git restore --staged 파일명 : add 잘못시켰을 때
+git revert 커밋 아이디 : commit 취소하는 방법
+
+git push -u 원격저장주소 올릴 브랜치 명 : -u는 원격저장주소를 기억하라고 하는 뜻임
+맨처음에 -u 쓰면 git push만 써도 됨
+git remote add 변수명 원격저장주소 : 원격저장주소를 계속 쳐야하는 게 아니고 변수명으로 설정해둬서 그것만 쓰면 될 수 있음
+
+git clone 원격저장주소 : 깃허브에 있는 코드들 다운 받을 수 있음
+남이 먼저 git push를 해서 원격저장소에 변동이 발생하면 git push를 나는 못해요
+-> git pull을 하라고 함.
+원격저장소를 로컬 저장소를 당겨올게요
+git pull 원격저장주소 브랜치명
+
+협업할 때 코드를 branch에서 각자 짜서 보내고 하다가
+모두 합치기 전에 : github의 pull request에서 코드를 서로 비교하면서 merge를 시킨다.
