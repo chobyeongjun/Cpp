@@ -1,1 +1,7 @@
-hello Cpp
+git add 파일명 # add는 staging 시키는 것이고 
+git commit -m '메모' # 메모에는 내가 어떤 것들을 수정했는지 이름을 적어주면 됨, 
+                    # commit은 staging에서 repository에 골라서 옮기는 작업임
+
+git add . # 폴더 내 모든 파일을 add 하는 것임
+git status 를 하면 지금 어떤 것들이 staging 되었는지
+git log --all --oneline 하면 현재 어떤 것들을 commit 했는지
