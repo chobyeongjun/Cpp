@@ -36,3 +36,5 @@ git pull 원격저장주소 브랜치명
 
 협업할 때 코드를 branch에서 각자 짜서 보내고 하다가
 모두 합치기 전에 : github의 pull request에서 코드를 서로 비교하면서 merge를 시킨다.
+
+git rm 파일명 : 파일 삭제 가능 + 이거 하고 commit + push
