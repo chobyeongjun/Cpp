@@ -1,0 +1,6 @@
+# 빌드 결과물 (Build artifacts)
+Hello_Cpp
+Hello_Cpp.dSYM/
+
+# VS Code 설정 폴더 (VS Code settings folder)
+.vscode/
